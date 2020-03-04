@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./AuthForm.scss";
 import classNames from "classnames/bind";
 import { Link } from "react-router-dom";
+
+import { I18nContext } from "../../../i18n";
+import LanguageSelect from "../../common/LanguageSelect";
 
 const cx = classNames.bind(styles);
 
@@ -33,8 +36,12 @@ const AuthForm = ({
       }
     }
   };
+
+  const { translate } = useContext(I18nContext);
+
   return (
     <div className={cx("auth-form")}>
+      <LanguageSelect />
       <div className={cx("title")}>{kind.toUpperCase()}</div>
       <div className={cx("error")}>
         {error.triggered && (
@@ -42,7 +49,7 @@ const AuthForm = ({
         )}
       </div>
       <div className={cx("line-wrapper")}>
-        <div className={cx("input-title")}>username</div>
+        <div className={cx("input-title")}>{translate('username')}</div>
         <input
           type="text"
           name="username"
@@ -52,7 +59,7 @@ const AuthForm = ({
         />
       </div>
       <div className={cx("line-wrapper")}>
-        <div className={cx("input-title")}>password</div>
+        <div className={cx("input-title")}>{translate('password')}</div>
         <input
           type="password"
           name="password"
@@ -67,7 +74,8 @@ const AuthForm = ({
         </div>
       ) : (
         <div className={cx("auth-button")} onClick={onLogin}>
-          {kind.toUpperCase()}
+          {/* {kind.toUpperCase()} */}
+          {translate('login').toUpperCase()}
         </div>
       )}
       {kind === "register" ? (
