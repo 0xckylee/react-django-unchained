@@ -2,7 +2,7 @@
 
 React-django tutorials put together all-in-one with internationlization, authentication for those looking for clean, manageable React + Django folder structure. Building frontend server will be done manually by you (so that you can access React app from Django localhost) instead of starting React and Django separately in dev mode. The instructions on this will be written later.
 
-<b>Open Incognito Mode Window on Chrome before starting the project each time</b>
+<b>Open Incognito Mode Window on Chrome before starting localhost, and restart terminals / incognito window if you encounter error while logging out.</b>
 
 ### TBDs
 - [ ] Navigation bar / routing
