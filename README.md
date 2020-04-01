@@ -41,7 +41,7 @@ For Django:
 If there are any errors while pip installing, please resolve them first before continuing.
 ```bash
 cd backend
-source venv/bin/activate
+source venv/bin/activate //or in Windows, venv-Windows\Scripts\activate.bat
 (venv) pip install django
 (venv) pip install djangorestframework
 (venv) pip install django-rest-knox
