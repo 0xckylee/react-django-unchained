@@ -15,19 +15,18 @@ React-django tutorials put together all-in-one with internationlization, authent
 
 * Yarn
 * npm (Recommended, not required)
-* Python 3
-```bash
-$ brew install python3
-```
-Pip3 is installed with Python3
+* Anaconda
 
-##### Installation
-To install virtualenv via pip run:
+### Installation
+Import conda environment
 ```bash
-$ pip3 install virtualenv
+$ conda env create -f reactdjangounchained.yml
+```
+Activate conda environment
+```bash
+$ conda activate reactdjangounchained
 ```
 
-### Installing
 
 For React:
 
@@ -35,22 +34,6 @@ For React:
 cd frontend
 yarn
 yarn start
-```
-For Django:
-
-If there are any errors while pip installing, please resolve them first before continuing.
-```bash
-cd backend
-source venv/bin/activate //or in Windows, venv-Windows\Scripts\activate.bat
-(venv) pip install django
-(venv) pip install djangorestframework
-(venv) pip install django-rest-knox
-cd vfinder3
-python manage.py runserver
-```
-To deactivate the virtualenv
-```bash
-$ deactivate
 ```
 
 ## Deployment
