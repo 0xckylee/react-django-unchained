@@ -1,4 +1,4 @@
-name: reactdjangounchainedenv
+name: reactdjangounchained
 channels:
   - defaults
 dependencies:
@@ -28,7 +28,8 @@ dependencies:
     - cryptography==2.8
     - django-rest-knox==4.1.0
     - djangorestframework==3.11.0
+    - mysqlclient==1.4.6
     - pycparser==2.20
     - six==1.14.0
-prefix: /usr/local/anaconda3/envs/reactdjangounchainedenv
+prefix: /usr/local/anaconda3/envs/reactdjangounchained
 
