@@ -1,13 +1,9 @@
 # react-django-unchained ⚛️🐍🔓
 
-React-django tutorials put together all-in-one with internationlization, authentication for those looking for clean, manageable React + Django folder structure. Building frontend server will be done manually by you (so that you can access React app from Django localhost) instead of starting React and Django separately in dev mode. The instructions on this will be written later.
+React-django tutorials put together all-in-one with internationlization and authentication features for those looking for clean, manageable React + Django folder structure.
 
 <b>Open Incognito Mode Window on Chrome before starting localhost, and restart terminals / incognito window if you encounter error while logging out.</b>
 
-### TBDs
-- [ ] Navigation bar / routing
-- [ ] Restructure with React Hooks
-- [ ] Instructions on deployment / making build server
 
 ## Getting Started
 
@@ -36,9 +32,6 @@ yarn
 yarn start
 ```
 
-## Deployment
-
-TBD
 
 ## Built With
 
